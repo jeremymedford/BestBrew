@@ -2,7 +2,7 @@
 //  APIClient.swift
 //
 //
-//  Original code from Treehouse Course projects.
+//  Original code from Treehouse Course projects. Modified with permission.
 //  Copyright © 2016 Treehouse. All rights reserved.
 //
 

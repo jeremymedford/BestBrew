@@ -1,8 +1,8 @@
 //
 //  FoursquareModels.swift
-//  RestaurantFinder
 //
-//  Created by Pasan Premaratne on 5/5/16.
+//
+//  Original code from Treehouse Course projects. Modified with permission.
 //  Copyright © 2016 Treehouse. All rights reserved.
 //
 
