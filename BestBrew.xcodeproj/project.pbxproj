@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4962601B1D0DBF1A00B04980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962601A1D0DBF1A00B04980 /* AppDelegate.swift */; };
+		4962601D1D0DBF1A00B04980 /* BestBrewMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962601C1D0DBF1A00B04980 /* BestBrewMapController.swift */; };
+		496260201D0DBF1A00B04980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4962601E1D0DBF1A00B04980 /* Main.storyboard */; };
+		496260221D0DBF1A00B04980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496260211D0DBF1A00B04980 /* Assets.xcassets */; };
+		496260251D0DBF1B00B04980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496260231D0DBF1A00B04980 /* LaunchScreen.storyboard */; };
+		496260301D0DBF1B00B04980 /* BestBrewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962602F1D0DBF1B00B04980 /* BestBrewTests.swift */; };
+		4962603C1D0DBF6600B04980 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962603A1D0DBF6600B04980 /* APIClient.swift */; };
+		4962603D1D0DBF6600B04980 /* FoursquareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962603B1D0DBF6600B04980 /* FoursquareClient.swift */; };
+		4962603F1D0DC18C00B04980 /* FoursquareModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962603E1D0DC18C00B04980 /* FoursquareModels.swift */; };
+		496260411D0DCB9C00B04980 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496260401D0DCB9C00B04980 /* LocationManager.swift */; };
+		496260471D0DD21E00B04980 /* CoffeeShopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496260461D0DD21E00B04980 /* CoffeeShopAnnotation.swift */; };
+		496260491D0DE4DB00B04980 /* VenueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496260481D0DE4DB00B04980 /* VenueDetailsViewController.swift */; };
+		4962604B1D0E13D300B04980 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962604A1D0E13D300B04980 /* ArrayDataSource.swift */; };
+		4962604D1D0E13FE00B04980 /* TipsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962604C1D0E13FE00B04980 /* TipsCell.swift */; };
+		4962604F1D0E186700B04980 /* NSDate+BBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962604E1D0E186700B04980 /* NSDate+BBExtensions.swift */; };
+		4962606F1D0F059600B04980 /* FoursquareModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962603E1D0DC18C00B04980 /* FoursquareModels.swift */; };
+		496260701D0F069700B04980 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962603A1D0DBF6600B04980 /* APIClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4962602C1D0DBF1B00B04980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4962600F1D0DBF1A00B04980 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496260161D0DBF1A00B04980;
+			remoteInfo = BestBrew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		496260171D0DBF1A00B04980 /* BestBrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestBrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4962601A1D0DBF1A00B04980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4962601C1D0DBF1A00B04980 /* BestBrewMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestBrewMapController.swift; sourceTree = "<group>"; };
+		4962601F1D0DBF1A00B04980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		496260211D0DBF1A00B04980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		496260241D0DBF1A00B04980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		496260261D0DBF1B00B04980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4962602B1D0DBF1B00B04980 /* BestBrewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestBrewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4962602F1D0DBF1B00B04980 /* BestBrewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestBrewTests.swift; sourceTree = "<group>"; };
+		496260311D0DBF1B00B04980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4962603A1D0DBF6600B04980 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4962603B1D0DBF6600B04980 /* FoursquareClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareClient.swift; sourceTree = "<group>"; };
+		4962603E1D0DC18C00B04980 /* FoursquareModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareModels.swift; sourceTree = "<group>"; };
+		496260401D0DCB9C00B04980 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		496260461D0DD21E00B04980 /* CoffeeShopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeShopAnnotation.swift; sourceTree = "<group>"; };
+		496260481D0DE4DB00B04980 /* VenueDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailsViewController.swift; sourceTree = "<group>"; };
+		4962604A1D0E13D300B04980 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		4962604C1D0E13FE00B04980 /* TipsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsCell.swift; sourceTree = "<group>"; };
+		4962604E1D0E186700B04980 /* NSDate+BBExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+BBExtensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		496260141D0DBF1A00B04980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496260281D0DBF1B00B04980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4962600E1D0DBF1A00B04980 = {
+			isa = PBXGroup;
+			children = (
+				496260191D0DBF1A00B04980 /* BestBrew */,
+				4962602E1D0DBF1B00B04980 /* BestBrewTests */,
+				496260181D0DBF1A00B04980 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		496260181D0DBF1A00B04980 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				496260171D0DBF1A00B04980 /* BestBrew.app */,
+				4962602B1D0DBF1B00B04980 /* BestBrewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		496260191D0DBF1A00B04980 /* BestBrew */ = {
+			isa = PBXGroup;
+			children = (
+				496260761D0F0C3E00B04980 /* Location */,
+				496260751D0F0C3000B04980 /* Views */,
+				496260741D0F0C2000B04980 /* Model */,
+				496260731D0F0C0900B04980 /* Networking */,
+				496260721D0F0BF800B04980 /* Controllers */,
+				496260711D0F0BED00B04980 /* Categories */,
+				4962601A1D0DBF1A00B04980 /* AppDelegate.swift */,
+				4962601E1D0DBF1A00B04980 /* Main.storyboard */,
+				496260211D0DBF1A00B04980 /* Assets.xcassets */,
+				496260231D0DBF1A00B04980 /* LaunchScreen.storyboard */,
+				496260261D0DBF1B00B04980 /* Info.plist */,
+			);
+			path = BestBrew;
+			sourceTree = "<group>";
+		};
+		4962602E1D0DBF1B00B04980 /* BestBrewTests */ = {
+			isa = PBXGroup;
+			children = (
+				4962602F1D0DBF1B00B04980 /* BestBrewTests.swift */,
+				496260311D0DBF1B00B04980 /* Info.plist */,
+			);
+			path = BestBrewTests;
+			sourceTree = "<group>";
+		};
+		496260711D0F0BED00B04980 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4962604E1D0E186700B04980 /* NSDate+BBExtensions.swift */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		496260721D0F0BF800B04980 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4962604A1D0E13D300B04980 /* ArrayDataSource.swift */,
+				496260481D0DE4DB00B04980 /* VenueDetailsViewController.swift */,
+				4962601C1D0DBF1A00B04980 /* BestBrewMapController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		496260731D0F0C0900B04980 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4962603A1D0DBF6600B04980 /* APIClient.swift */,
+				4962603B1D0DBF6600B04980 /* FoursquareClient.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		496260741D0F0C2000B04980 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4962603E1D0DC18C00B04980 /* FoursquareModels.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		496260751D0F0C3000B04980 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				496260461D0DD21E00B04980 /* CoffeeShopAnnotation.swift */,
+				4962604C1D0E13FE00B04980 /* TipsCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		496260761D0F0C3E00B04980 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				496260401D0DCB9C00B04980 /* LocationManager.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		496260161D0DBF1A00B04980 /* BestBrew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496260341D0DBF1B00B04980 /* Build configuration list for PBXNativeTarget "BestBrew" */;
+			buildPhases = (
+				496260131D0DBF1A00B04980 /* Sources */,
+				496260141D0DBF1A00B04980 /* Frameworks */,
+				496260151D0DBF1A00B04980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BestBrew;
+			productName = BestBrew;
+			productReference = 496260171D0DBF1A00B04980 /* BestBrew.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4962602A1D0DBF1B00B04980 /* BestBrewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496260371D0DBF1B00B04980 /* Build configuration list for PBXNativeTarget "BestBrewTests" */;
+			buildPhases = (
+				496260271D0DBF1B00B04980 /* Sources */,
+				496260281D0DBF1B00B04980 /* Frameworks */,
+				496260291D0DBF1B00B04980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4962602D1D0DBF1B00B04980 /* PBXTargetDependency */,
+			);
+			name = BestBrewTests;
+			productName = BestBrewTests;
+			productReference = 4962602B1D0DBF1B00B04980 /* BestBrewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4962600F1D0DBF1A00B04980 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "JM Inc";
+				TargetAttributes = {
+					496260161D0DBF1A00B04980 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4962602A1D0DBF1B00B04980 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 496260161D0DBF1A00B04980;
+					};
+				};
+			};
+			buildConfigurationList = 496260121D0DBF1A00B04980 /* Build configuration list for PBXProject "BestBrew" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4962600E1D0DBF1A00B04980;
+			productRefGroup = 496260181D0DBF1A00B04980 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				496260161D0DBF1A00B04980 /* BestBrew */,
+				4962602A1D0DBF1B00B04980 /* BestBrewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		496260151D0DBF1A00B04980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496260251D0DBF1B00B04980 /* LaunchScreen.storyboard in Resources */,
+				496260221D0DBF1A00B04980 /* Assets.xcassets in Resources */,
+				496260201D0DBF1A00B04980 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496260291D0DBF1B00B04980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		496260131D0DBF1A00B04980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4962601D1D0DBF1A00B04980 /* BestBrewMapController.swift in Sources */,
+				4962604D1D0E13FE00B04980 /* TipsCell.swift in Sources */,
+				4962604B1D0E13D300B04980 /* ArrayDataSource.swift in Sources */,
+				4962603D1D0DBF6600B04980 /* FoursquareClient.swift in Sources */,
+				496260411D0DCB9C00B04980 /* LocationManager.swift in Sources */,
+				4962603F1D0DC18C00B04980 /* FoursquareModels.swift in Sources */,
+				4962604F1D0E186700B04980 /* NSDate+BBExtensions.swift in Sources */,
+				4962601B1D0DBF1A00B04980 /* AppDelegate.swift in Sources */,
+				4962603C1D0DBF6600B04980 /* APIClient.swift in Sources */,
+				496260491D0DE4DB00B04980 /* VenueDetailsViewController.swift in Sources */,
+				496260471D0DD21E00B04980 /* CoffeeShopAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496260271D0DBF1B00B04980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4962606F1D0F059600B04980 /* FoursquareModels.swift in Sources */,
+				496260301D0DBF1B00B04980 /* BestBrewTests.swift in Sources */,
+				496260701D0F069700B04980 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4962602D1D0DBF1B00B04980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496260161D0DBF1A00B04980 /* BestBrew */;
+			targetProxy = 4962602C1D0DBF1B00B04980 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4962601E1D0DBF1A00B04980 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4962601F1D0DBF1A00B04980 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		496260231D0DBF1A00B04980 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496260241D0DBF1A00B04980 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		496260321D0DBF1B00B04980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		496260331D0DBF1B00B04980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		496260351D0DBF1B00B04980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BestBrew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vintagerobot.BestBrew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		496260361D0DBF1B00B04980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BestBrew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vintagerobot.BestBrew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		496260381D0DBF1B00B04980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BestBrewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vintagerobot.BestBrewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BestBrew.app/BestBrew";
+			};
+			name = Debug;
+		};
+		496260391D0DBF1B00B04980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BestBrewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vintagerobot.BestBrewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BestBrew.app/BestBrew";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		496260121D0DBF1A00B04980 /* Build configuration list for PBXProject "BestBrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496260321D0DBF1B00B04980 /* Debug */,
+				496260331D0DBF1B00B04980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		496260341D0DBF1B00B04980 /* Build configuration list for PBXNativeTarget "BestBrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496260351D0DBF1B00B04980 /* Debug */,
+				496260361D0DBF1B00B04980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		496260371D0DBF1B00B04980 /* Build configuration list for PBXNativeTarget "BestBrewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496260381D0DBF1B00B04980 /* Debug */,
+				496260391D0DBF1B00B04980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4962600F1D0DBF1A00B04980 /* Project object */;
+}
