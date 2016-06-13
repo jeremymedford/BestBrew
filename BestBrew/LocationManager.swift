@@ -54,7 +54,6 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }
-//        manager.stopUpdatingLocation()
         let coordinate = Coordinate(location: location)
         if let onLocationFix = onLocationFix {
             onLocationFix(coordinate)

@@ -143,16 +143,6 @@ class BestBrewMapController: UIViewController, MKMapViewDelegate {
         }
     }
     
-//    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
-//        
-//        var region = MKCoordinateRegion()
-//        region.center = mapView.userLocation.coordinate
-//        region.span.latitudeDelta = 0.03
-//        region.span.longitudeDelta = 0.03
-//        
-//        mapView.setRegion(region, animated: true)
-//    }
-
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
         if annotation.isKindOfClass(MKUserLocation) {
