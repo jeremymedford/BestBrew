@@ -100,6 +100,7 @@ class VenueDetailsViewController: UIViewController {
     
     func configureView() {
         if let venue = self.venue {
+            nameLabel?.numberOfLines = 0;
             nameLabel?.text = venue.name
             if let address = venue.location?.streetAddress,
                 let city = venue.location?.city {
@@ -117,7 +118,9 @@ class VenueDetailsViewController: UIViewController {
     
     func loadPhotoImage() {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            if let photoURL = NSURL(string: (self.photo?.photoURLString)!) {
+            if let photo = self.photo,
+            let urlString = photo.photoURLString,
+                let photoURL = NSURL(string: urlString) {
                 let image = UIImage(data: NSData(contentsOfURL: photoURL)!)
                 dispatch_async(dispatch_get_main_queue()) {
                     self.imageView.image = image

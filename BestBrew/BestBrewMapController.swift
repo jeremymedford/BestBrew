@@ -28,10 +28,11 @@ class BestBrewMapController: UIViewController, MKMapViewDelegate {
         
         // Do any additional setup after loading the view, typically from a nib.
         
-        manager.getPermission()
+
         manager.onLocationFix = { [weak self] coordinate in
             
             self?.coordinate = coordinate
+            self?.mapView?.showsUserLocation = true
             self?.updateMapCenter()
             self?.foursquareClient.fetchCoffeeShopsFor(coordinate, category: .Coffee, limit: 15) { result in
                 switch result {
@@ -39,7 +40,7 @@ class BestBrewMapController: UIViewController, MKMapViewDelegate {
                     print("Success returning venues")
                     self?.venues = venues
                 case .Failure(let error):
-                    print(error)
+                    print("Error fetching venues: \(error)")
                     self?.displayFetchError(error as NSError)
                 }
             }
@@ -51,13 +52,17 @@ class BestBrewMapController: UIViewController, MKMapViewDelegate {
             
         }
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        manager.getPermission()
+    }
 
     @IBAction func refreshVenues(sender: AnyObject) {
         if let coordinate = self.coordinate {
             self.foursquareClient.fetchCoffeeShopsFor(coordinate, category: .Coffee, limit: 15) { result in
                 switch result {
                 case .Success(let venues):
-                    print("\(venues)")
                     self.venues = venues
                 case .Failure(let error):
                     print(error)

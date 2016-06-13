@@ -26,13 +26,14 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
         super.init()
         manager.delegate = self
         manager.desiredAccuracy = 1000
-        manager.distanceFilter = 1000
-        manager.startUpdatingLocation()
+
     }
     
     func getPermission() {
         if CLLocationManager.authorizationStatus() == .NotDetermined {
             manager.requestWhenInUseAuthorization()
+        } else if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+            manager.startUpdatingLocation()
         }
     }
     
@@ -54,6 +55,7 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }
+        manager.stopUpdatingLocation()
         let coordinate = Coordinate(location: location)
         if let onLocationFix = onLocationFix {
             onLocationFix(coordinate)

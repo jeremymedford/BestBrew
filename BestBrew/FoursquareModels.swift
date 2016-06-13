@@ -114,7 +114,7 @@ struct VenuePhoto {
 
 extension VenuePhoto: JSONDecodable {
     
-    var photoURLString:String {
+    var photoURLString:String? {
         return "\(prefix)\(size)\(suffix)"
     }
     
